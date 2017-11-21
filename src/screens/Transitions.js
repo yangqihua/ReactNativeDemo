@@ -13,7 +13,7 @@ class Transitions extends React.Component {
 
   showSharedElementTransitions = () => {
     this.props.navigator.showModal({
-      title: 'Shared Element Transition Examples',
+      title: 'Examples',
       screen: 'example.Transitions.SharedElementTransitions',
     });
   };
@@ -22,7 +22,7 @@ class Transitions extends React.Component {
     return (
       <ScrollView style={styles.container}>
         <Row title={'Collapsing Header'} onPress={this.showCollapsingHeader}/>
-        <Row title={'Shared Element Transition'} onPress={this.showSharedElementTransitions}/>
+        <Row title={'Shared'} onPress={this.showSharedElementTransitions}/>
       </ScrollView>
     );
   }

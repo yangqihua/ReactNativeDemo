@@ -31,14 +31,16 @@ if (Platform.OS === 'android') {
 // this will start our app
 Navigation.startTabBasedApp({
 	tabs,
-	animationType: Platform.OS === 'ios' ? 'slide-down' : 'fade',
+	animationType: 'slide-down',
 	tabsStyle: {
-		tabBarBackgroundColor: '#003a66',
-		tabBarButtonColor: '#ffffff',
+		// tabBarButtonColor: '#ffffff',
 		tabBarSelectedButtonColor: '#ff505c',
+		tabBarBackgroundColor: '#003a66',
 		tabFontFamily: 'BioRhyme-Bold',
 	},
 	appStyle: {
+		orientation: 'portrait',
+
 		tabBarBackgroundColor: '#003a66',
 		navBarButtonColor: '#ffffff',
 		tabBarButtonColor: '#ffffff',
@@ -49,9 +51,4 @@ Navigation.startTabBasedApp({
 		statusBarColor: '#002b4c',
 		tabFontFamily: 'BioRhyme-Bold',
 	},
-	drawer: {
-		left: {
-			screen: 'example.Types.Drawer'
-		}
-	}
 });

@@ -32,8 +32,8 @@ export function registerScreens() {
   Navigation.registerComponent('example.Transitions', () => Transitions);
 
   Navigation.registerComponent('example.Types.Push', () => Push);
-  Navigation.registerComponent('example.Types.Drawer', () => Drawer);
-  Navigation.registerComponent('example.Types.Screen', () => Drawer);
+  // Navigation.registerComponent('example.Types.Drawer', () => Drawer);
+  // Navigation.registerComponent('example.Types.Screen', () => Drawer);
   Navigation.registerComponent('example.Types.ListScreen', () => ListScreen);
   Navigation.registerComponent('example.Types.DummyScreen', () => DummyScreen);
   Navigation.registerComponent('example.Types.Modal', () => Modal);
