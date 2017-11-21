@@ -3,14 +3,16 @@
 	"version": "0.0.1",
 	"private": true,
 	"scripts": {
-		"start": "node node_modules/react-native/local-cli/cli.js start",
+		"start": "watchman watch-del-all && (adb reverse tcp:8081 tcp:8081 || true) && node node_modules/react-native/local-cli/cli.js start --reset-cache",
+		"xcode": "open ios/example.xcodeproj",
+		"android": "cd android && ./gradlew installDebug",
 		"test": "jest"
 	},
 	"dependencies": {
 		"react": "16.0.0",
 		"react-native": "0.50.3",
-		"react-native-navigation": "^1.1.284",
-		"react-navigation": "^1.0.0-beta.19"
+		"react-native-animatable": "^1.2.4",
+		"react-native-navigation": "^1.1.284"
 	},
 	"devDependencies": {
 		"babel-jest": "21.2.0",
