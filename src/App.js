@@ -11,25 +11,25 @@ const tabs = [
 	{
 		label: '首页',
 		screen: 'home',
-		icon: require('../img/list.png'),
+		icon: require('../img/app/home/home.png'),
 		title: '趣购',
 	},
 	{
 		label: '每周推荐',
 		screen: 'example.Actions',
-		icon: require('../img/swap.png'),
+		icon: require('../img/app/home/recommend.png'),
 		title: '每周推荐',
 	},
 	{
 		label: '榜单',
 		screen: 'example.Actions',
-		icon: require('../img/swap.png'),
+		icon: require('../img/app/home/top.png'),
 		title: '榜单',
 	},
 	{
 		label: '我的',
 		screen: 'example.Actions',
-		icon: require('../img/swap.png'),
+		icon: require('../img/app/home/me.png'),
 		title: '我的',
 	}
 ];
@@ -39,7 +39,6 @@ Navigation.startTabBasedApp({
 	tabs,
 	animationType: 'slide-down',
 	tabsStyle: {
-		tabBarButtonColor: '#9B9696',
 		tabBarSelectedButtonColor: '#fe2a43',
 		tabBarBackgroundColor: '#ffffff',
 		tabFontFamily: 'BioRhyme-Bold',
@@ -48,7 +47,7 @@ Navigation.startTabBasedApp({
 	appStyle: {
 		orientation: 'portrait',
 
-		tabBarButtonColor: '#9B9696',
+		tabBarButtonColor: '#9f9a9a',
 		tabBarSelectedButtonColor: '#fe2a43',
 		tabBarBackgroundColor: '#ffffff',
 
@@ -63,15 +62,17 @@ Navigation.startTabBasedApp({
 		tabBarTranslucent:false,
 		navBarTitleTextCentered: true,
 
-		navBarHeight: 52, // Optional, set the navBar height in pixels.
+		navBarHeight: 48, // Optional, set the navBar height in pixels.
 		// topTabsHeight: 52, // Optional, set topTabs height in pixels.
 		navBarTextFontSize:17,
 
-		statusBarHideWithNavBar:true,
+		// statusBarHideWithNavBar:true,
+		// statusBarHidden:true,
 
 		// ios
-		keepStyleAcrossPush: false,
-		navBarLeftButtonFontSize:11,
+		// keepStyleAcrossPush: false,
+		// navBarLeftButtonFontSize:11,
+		// statusBarBlur:true,
 
 		// statusBarTextColorSchemeSingleScreen: 'light',
 		// statusBarBlur:true,
