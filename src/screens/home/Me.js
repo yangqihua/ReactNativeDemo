@@ -108,7 +108,7 @@ class Me extends React.Component {
 				<Row title={'Push List Screen'} testID={'pushListScreen'} onPress={this.pushListScreen}/>
 				<Row title={'Custom TopBar'} onPress={this.pushCustomTopBarScreen}/>
 				<Row title={'Custom Button'} onPress={this.pushCustomButtonScreen}/>
-				<Row title={'Top Tabs Screen'} onPress={this.pushTopTabsScreen} platform={'android'}/>
+				<Row title={'Top Tabs Screen'} onPress={this.pushTopTabsScreen}/>
 				<Row title={'Show Modal'} onPress={this.showModal}/>
 				<Row title={'Show Lightbox'} onPress={this.showLightBox}/>
 				<Row title={'Show In-App Notification'} onPress={this.showInAppNotification}/>

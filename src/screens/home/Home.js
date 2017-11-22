@@ -3,9 +3,8 @@
  */
 
 import React from 'react';
-import {StyleSheet, ScrollView} from 'react-native';
-import Row from '../../components/Row';
-
+import {View,Text,StyleSheet} from 'react-native';
+import ScrollableTabView, {ScrollableTabBar, } from 'react-native-scrollable-tab-view';
 class Home extends React.Component {
 
 	constructor(props) {
@@ -14,18 +13,25 @@ class Home extends React.Component {
 
 	render() {
 		return (
-			<ScrollView style={styles.container}>
-				<Row title={'Push Screen'} />
-				<Row title={'Push List Screen'}/>
-			</ScrollView>
+			<ScrollableTabView
+				style={{marginTop: 20, }}
+				initialPage={1}
+				renderTabBar={() => <ScrollableTabBar />}
+			>
+				<Text tabLabel='Tab #1'>My</Text>
+				<Text tabLabel='Tab #2'>favorite</Text>
+				<Text tabLabel='Tab #3'>project</Text>
+				<Text tabLabel='Tab #3'>project</Text>
+				<Text tabLabel='Tab #3'>project</Text>
+			</ScrollableTabView>
 		);
 	}
 }
 
-const styles = StyleSheet.create({
-	container: {
-		flex: 1,
-	},
-});
+// const styles = StyleSheet.create({
+// 	container: {
+// 		flex: 1,
+// 	},
+// });
 
 export default Home;
