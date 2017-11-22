@@ -22,7 +22,7 @@ function Row({title, onPress, platform, testID}) {
 
 Row.propTypes = {
   title: PropTypes.string.isRequired,
-  onPress: PropTypes.func.isRequired,
+  // onPress: PropTypes.func.isRequired,
 };
 
 const styles = StyleSheet.create({

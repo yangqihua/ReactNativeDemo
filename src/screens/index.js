@@ -1,6 +1,11 @@
 import {Navigation, ScreenVisibilityListener} from 'react-native-navigation';
 
-import Types from './NavigationTypes';
+import Home from './home/Home';
+import Recommend from './home/Recommend';
+import Top from './home/Top';
+import Me from './home/Me';
+
+
 import Actions from './Actions';
 import Transitions from './Transitions';
 
@@ -27,7 +32,12 @@ import Masonry from './transitions/sharedElementTransitions/Masonry/Masonry';
 import MasonryItem from './transitions/sharedElementTransitions/Masonry/Item';
 
 export function registerScreens() {
-  Navigation.registerComponent('home', () => Types);
+  Navigation.registerComponent('home.Home', () => Home);
+  Navigation.registerComponent('home.Recommend', () => Recommend);
+  Navigation.registerComponent('home.Top', () => Top);
+  Navigation.registerComponent('home.Me', () => Me);
+
+
   Navigation.registerComponent('example.Actions', () => Actions);
   Navigation.registerComponent('example.Transitions', () => Transitions);
 

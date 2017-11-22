@@ -10,25 +10,25 @@ registerScreenVisibilityListener();
 const tabs = [
 	{
 		label: '首页',
-		screen: 'home',
+		screen: 'home.Home',
 		icon: require('../img/app/home/home.png'),
 		title: '趣购',
 	},
 	{
 		label: '每周推荐',
-		screen: 'example.Actions',
+		screen: 'home.Recommend',
 		icon: require('../img/app/home/recommend.png'),
 		title: '每周推荐',
 	},
 	{
 		label: '榜单',
-		screen: 'example.Actions',
+		screen: 'home.Top',
 		icon: require('../img/app/home/top.png'),
 		title: '榜单',
 	},
 	{
 		label: '我的',
-		screen: 'example.Actions',
+		screen: 'home.Me',
 		icon: require('../img/app/home/me.png'),
 		title: '我的',
 	}
