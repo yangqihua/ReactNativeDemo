@@ -4,6 +4,16 @@ import Row from '../components/Row';
 
 class NavigationTypes extends React.Component {
 
+	static navigatorStyle = {
+	};
+	// componentDidMount() {
+	// 	this.props.navigator.setStyle({
+	// 		navBarCustomView: 'example.CustomTopBar',
+	// 		navBarComponentAlignment: 'center',
+	// 		navBarCustomViewInitialProps: {title: 'Hi Custom'}
+	// 	});
+	// }
+
 	constructor(props) {
 		super(props);
 		this.props.navigator.setOnNavigatorEvent(this.onNavigatorEvent.bind(this));

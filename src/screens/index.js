@@ -27,7 +27,7 @@ import Masonry from './transitions/sharedElementTransitions/Masonry/Masonry';
 import MasonryItem from './transitions/sharedElementTransitions/Masonry/Item';
 
 export function registerScreens() {
-  Navigation.registerComponent('example.Types', () => Types);
+  Navigation.registerComponent('home', () => Types);
   Navigation.registerComponent('example.Actions', () => Actions);
   Navigation.registerComponent('example.Transitions', () => Transitions);
 
