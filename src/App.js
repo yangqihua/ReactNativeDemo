@@ -70,7 +70,7 @@ Navigation.startTabBasedApp({
 		// statusBarHidden:true,
 
 		// ios
-		// keepStyleAcrossPush: false,
+		keepStyleAcrossPush: false,
 		// navBarLeftButtonFontSize:11,
 		// statusBarBlur:true,
 
